@@ -6,3 +6,13 @@ if !has('gui_running') | set t_Co=256 | endif
 
 " Wildignore
 set wig+=vendor,log,logs
+
+
+" NERDTree
+let g:NERDTreeWinPos = "right" 
+
+" fzf
+" FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+
+" git gutter
+set updatetime=200

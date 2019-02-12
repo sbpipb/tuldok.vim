@@ -9,5 +9,13 @@ if has('gui_running')
   color ir_black+
 else
   " Settings for when running in the console
-  color base16
+  " color base16
 endif
+
+
+"spacevim
+if (has("termguicolors"))
+  set termguicolors
+endif
+set background=dark
+colorscheme spacemacs-theme
