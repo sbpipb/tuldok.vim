@@ -16,3 +16,9 @@ let g:NERDTreeWinPos = "right"
 
 " git gutter
 set updatetime=200
+" max git diff
+let g:gitgutter_max_signs = 300  " default value
+
+" to allow yanking on multiple sessions
+set clipboard=unnamed
+

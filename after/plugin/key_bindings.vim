@@ -13,3 +13,11 @@ nnoremap <leader>feo :cd ~/.vim<CR>:e ~/.vim/after/plugin/options.vim<CR>
 " show/hide nerdtree Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
+
+
+" split management
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
