@@ -10,6 +10,17 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 
+"
+Plug 'sheerun/vim-polyglot'
+Plug 'w0rp/ale'
+
+" tabs
+Plug 'tpope/vim-sleuth'
+
 " theme
 Plug 'colepeters/spacemacs-theme.vim'
+
+
+" icons
+" Plug 'ryanoasis/vim-devicons'
 call plug#end()
