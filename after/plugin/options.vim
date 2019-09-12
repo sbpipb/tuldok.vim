@@ -52,3 +52,17 @@ let g:ale_sign_column_always = 1
 let g:ale_set_highlights = 0 
 
 " END OF ALE
+
+
+"vimscript
+let g:xNERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?" }
