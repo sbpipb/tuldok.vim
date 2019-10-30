@@ -17,7 +17,8 @@ Plug 'airblade/vim-gitgutter'
 
 "
 Plug 'sheerun/vim-polyglot'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " tabs
 Plug 'tpope/vim-sleuth'
@@ -29,7 +30,7 @@ Plug 'prettier/vim-prettier', {
 
 " theme
 Plug 'colepeters/spacemacs-theme.vim'
-
+Plug 'git@gitlab.com:yorickpeterse/happy_hacking.vim.git'
 
 " icons
 " plug 'ryanoasis/vim-devicons'
