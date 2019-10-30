@@ -35,7 +35,7 @@ set encoding=utf-8
 " Sfecific linting
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'ruby': ['rubocop'],
+\   'ruby': ['rubocop', 'reek'],
 \}
 
 " runs only when save
@@ -47,6 +47,9 @@ let g:ale_linters_explicit = 1
 let g:airline#extensions#ale#enabled = 1 
 
 let g:ale_sign_column_always = 1
+
+let g:ale_sign_error = '!!'
+let g:ale_sign_warning = '--'
 
 " Disable ALE auto highlights
 let g:ale_set_highlights = 0 
@@ -66,3 +69,5 @@ let g:xNERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?" }
+
+set wrap
