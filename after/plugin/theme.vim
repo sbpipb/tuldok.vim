@@ -19,6 +19,5 @@ if (has("termguicolors"))
 endif
 set background=dark
 
+"/ color happy_hacking
 colorscheme spacemacs-theme
-
-color happy_hacking

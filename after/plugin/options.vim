@@ -38,6 +38,11 @@ let g:ale_linters = {
 \   'ruby': ['rubocop', 'reek'],
 \}
 
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
+
+
 " runs only when save
 let g:ale_lint_on_text_changed = 'never'
 
@@ -56,6 +61,9 @@ let g:ale_set_highlights = 0
 
 " END OF ALE
 
+" blamer
+let g:blamer_enabled = 1
+
 
 "vimscript
 let g:xNERDTreeIndicatorMapCustom = {
@@ -71,3 +79,6 @@ let g:xNERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?" }
 
 set wrap
+
+
+let NERDTreeIgnore = ['^node_modules$[[dir]]']
