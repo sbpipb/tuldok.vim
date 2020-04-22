@@ -5,6 +5,10 @@ set shell=sh
 
 call plug#begin('~/.vim/vendor')
 
+" Use release branch (Recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+
 if !has('nvim') && !exists('g:gui_oni') | Plug 'tpope/vim-sensible' | endif
 Plug 'rstacruz/vim-opinion'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -21,11 +25,15 @@ Plug 'airblade/vim-gitgutter'
 "
 Plug 'sheerun/vim-polyglot'
 " Plug 'w0rp/ale' old ale
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
-" tabs
+" This plugin automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file, or, in the case the current file is new, blank, or otherwise insufficient, by looking at other files of the same type in the current and parent directories. In lieu of adjusting 'softtabstop', 'smarttab' is enabled.
 Plug 'tpope/vim-sleuth'
+
+"Fugitive is the premier Vim plugin for Git. Or maybe it's the premier Git plugin for Vim? Either way, it's "so awesome, it should be illegal". That's why it's called Fugitive.
 Plug 'tpope/vim-fugitive'
+
+" Visuals
 Plug 'chrisbra/colorizer'
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
@@ -40,7 +48,5 @@ Plug 'colepeters/spacemacs-theme.vim'
 " icons
 " plug 'ryanoasis/vim-devicons'
 
-" Use release branch (Recommend)
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
