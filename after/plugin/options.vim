@@ -309,31 +309,31 @@ set encoding=utf-8
 
 " START OF ALE
 " Sfecific linting
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'ruby': ['rubocop', 'reek'],
-\}
-
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\}
-
-
-" runs only when save
-let g:ale_lint_on_text_changed = 'never'
-
-" Only run linters named in ale_linters settings.
-let g:ale_linters_explicit = 1 
-
-let g:airline#extensions#ale#enabled = 1 
-
-let g:ale_sign_column_always = 1
-
-let g:ale_sign_error = '!!'
-let g:ale_sign_warning = '--'
-
-" Disable ALE auto highlights
-let g:ale_set_highlights = 0 
+" let g:ale_linters = {
+" \   'javascript': ['eslint'],
+" \   'ruby': ['rubocop', 'reek'],
+" \}
+" 
+" let g:ale_linters = {
+" \   'javascript': ['eslint'],
+" \}
+" 
+" 
+" " runs only when save
+" let g:ale_lint_on_text_changed = 'never'
+" 
+" " Only run linters named in ale_linters settings.
+" let g:ale_linters_explicit = 1 
+" 
+" let g:airline#extensions#ale#enabled = 1 
+" 
+" let g:ale_sign_column_always = 1
+" 
+" let g:ale_sign_error = '!!'
+" let g:ale_sign_warning = '--'
+" 
+" " Disable ALE auto highlights
+" let g:ale_set_highlights = 0 
 
 " END OF ALE
 
@@ -372,3 +372,9 @@ let g:coc_global_extensions = [
       \ 'coc-prettier',
       \ 'coc-json'
       \ ]
+
+
+" command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" ctrl p
+" let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
