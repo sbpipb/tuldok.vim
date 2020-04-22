@@ -10,6 +10,8 @@ nnoremap <leader>fek :cd ~/.vim<CR>:e ~/.vim/after/plugin/key_bindings.vim<CR>
 " SPC-f-e-o to edit your options file
 nnoremap <leader>feo :cd ~/.vim<CR>:e ~/.vim/after/plugin/options.vim<CR>
 
+nnoremap <leader>fet :cd ~/.vim<CR>:e ~/.vim/after/plugin/theme.vim<CR>
+
 " show/hide nerdtree Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
