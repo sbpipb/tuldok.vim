@@ -20,6 +20,6 @@ endif
 
 set background=dark
 
-color happy_hacking
+" color happy_hacking
 " colorscheme spacemacs-theme
-" colorscheme gruvbox
+colorscheme gruvbox

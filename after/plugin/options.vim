@@ -374,6 +374,8 @@ let g:coc_global_extensions = [
       \ ]
 
 
+let g:gruvbox_contrast_dark = "soft"
+
 " command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " ctrl p
