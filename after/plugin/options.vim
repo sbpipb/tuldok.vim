@@ -284,15 +284,10 @@ if !has('gui_running') | set t_Co=256 | endif
 " Hide line numbers by default
 " set nonumber
 
-" adding the flags to NERDTree
-let g:webdevicons_enable_nerdtree = 1
-
 " Wildignore
 set wig+=vendor,log,logs
 
 set guifont=FontAwesome\ 11
-" NERDTree
-let g:NERDTreeWinPos = "right" 
 
 " fzf
 let FZF_DEFAULT_OPTS='--height 10% --layout=reverse --border'
@@ -345,8 +340,13 @@ let g:ale_set_highlights = 0
 " blamer
 let g:blamer_enabled = 1
 
+set wrap
 
-"vimscript
+" NERDTree
+let g:NERDTreeWinPos = "right" 
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['^node_modules$[[dir]]']
+
 let g:xNERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -359,10 +359,8 @@ let g:xNERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?" }
 
-set wrap
-
-
-let NERDTreeIgnore = ['^node_modules$[[dir]]']
+" adding the flags to NERDTree
+let g:webdevicons_enable_nerdtree = 1
 
 " COC extensions
 let g:coc_global_extensions = [
