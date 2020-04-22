@@ -5,24 +5,25 @@ set shell=sh
 
 call plug#begin('~/.vim/vendor')
 
-" Use release branch (Recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" icons
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
+
 
 if !has('nvim') && !exists('g:gui_oni') | Plug 'tpope/vim-sensible' | endif
+
 Plug 'rstacruz/vim-opinion'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" Plug 'junegunn/vim-emoji'
 
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
-Plug 'airblade/vim-gitgutter'
-" Plug 'APZelos/blamer.nvim'
-
-"
 Plug 'sheerun/vim-polyglot'
 " Plug 'w0rp/ale' old ale
 " Plug 'dense-analysis/ale'
@@ -41,12 +42,10 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
+" Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " theme
-Plug 'colepeters/spacemacs-theme.vim'
+" Plug 'colepeters/spacemacs-theme.vim'
+Plug 'morhetz/gruvbox'
 " Plug 'git@gitlab.com:yorickpeterse/happy_hacking.vim.git'
-
-" icons
-" plug 'ryanoasis/vim-devicons'
-
 
 call plug#end()
