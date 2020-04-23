@@ -287,7 +287,9 @@ if !has('gui_running') | set t_Co=256 | endif
 " Wildignore
 set wig+=vendor,log,logs
 
-set guifont=FontAwesome\ 11
+" NERDTree stuff
+set guifont=FontAwesome\ Nerd\ 11
+set guifont=DroidSansMono\ Nerd\ Font:h11
 
 " fzf
 let FZF_DEFAULT_OPTS='--height 10% --layout=reverse --border'

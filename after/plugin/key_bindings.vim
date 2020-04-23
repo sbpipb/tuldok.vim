@@ -15,6 +15,7 @@ nnoremap <leader>fet :cd ~/.vim<CR>:e ~/.vim/after/plugin/theme.vim<CR>
 " show/hide nerdtree Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
+nnoremap <leader>pp :Prettier<CR>
 
 
 " split management
