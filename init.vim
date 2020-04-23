@@ -10,7 +10,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " icons
-" Plug 'ryanoasis/vim-devicons'
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'airblade/vim-gitgutter'
@@ -47,5 +46,8 @@ Plug 'prettier/vim-prettier', {
 " Plug 'colepeters/spacemacs-theme.vim'
 Plug 'morhetz/gruvbox'
 " Plug 'git@gitlab.com:yorickpeterse/happy_hacking.vim.git'
+"
+
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
