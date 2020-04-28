@@ -4,7 +4,7 @@
 Inspired by 
 https://github.com/rstacruz/vim-from-scratch
 
-Screenshot of my Vim setup
+# Screenshot
 
 ![Screenies](screenies/vim.png)
 
