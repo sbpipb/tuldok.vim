@@ -12,14 +12,20 @@ else
   " color base16
 endif
 
-
-"spacevim
-if (has("termguicolors"))
-  set termguicolors
-endif
-
+" gruvbox
 set background=dark
+colorscheme gruvbox
 
 " color happy_hacking
 " colorscheme spacemacs-theme
-colorscheme gruvbox
+
+" syntax enable
+
+" sets Vim theme to work on TMUX
+" if (has("termguicolors"))
+set t_Co=256
+if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux' )
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
