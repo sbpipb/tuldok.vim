@@ -25,8 +25,8 @@ nnoremap <leader>pp :Prettier<CR>
 
 " nerdcommenter
 " ctrl + l
-vmap <C-l> <plug>NERDCommenterToggle
-nmap <C-l> <plug>NERDCommenterToggle
+vmap <C-y> <plug>NERDCommenterToggle
+nmap <C-y> <plug>NERDCommenterToggle
 
 " split management
 map <C-j> <C-W>j
