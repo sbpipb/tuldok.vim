@@ -70,6 +70,12 @@ mv ~/.config/nvim ~/.config/nvim~
 
 
 ## Clone repository 
-git clone git@github.com:sbpipb/tuldok.vim.git ~/.vim
+
+```git clone git@github.com:sbpipb/tuldok.vim.git ~/.vim```
 
 ### Run make link
+
+```
+  cd .vim 
+  make link 
+```
