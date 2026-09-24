@@ -1,8 +1,8 @@
-" ctrl-p to open a file via fzf
-if exists(':FZF')
-  nnoremap <C-p> :FZF!<cr>
-  " nnoremap <C-a> :FZF!<cr>
-endif
+" fzf.vim
+" ctrl-p to open a file, SPC-b buffers, SPC-g ripgrep the project
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>g :Rg<CR>
 
 " SPC-f-e-d to edit your config file
 nnoremap <leader>fed :cd ~/.vim<CR>:e ~/.vim/init.vim<CR>
@@ -15,21 +15,23 @@ nnoremap <leader>fet :cd ~/.vim<CR>:e ~/.vim/after/plugin/theme.vim<CR>
 
 nnoremap <leader>fec :cd ~/.vim<CR>:e ~/.vim/after/plugin/coc.vim<CR>
 
-" show/hide nerdtree Ctrl+n
-map <C-n> :NERDTreeToggle<CR>
+" show/hide nerdtree Ctrl+n, reveal current file SPC-n
+nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeFind<CR>
 
-" ctrl p
-" let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" prettier via coc-prettier
+nnoremap <leader>pp :CocCommand prettier.formatFile<CR>
 
-nnoremap <leader>pp :Prettier<CR>
+" clear search highlight
+nnoremap <silent> <leader><CR> :nohlsearch<CR>
 
 " nerdcommenter
-" ctrl + l
+" ctrl + y
 vmap <C-y> <plug>NERDCommenterToggle
 nmap <C-y> <plug>NERDCommenterToggle
 
 " split management
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l

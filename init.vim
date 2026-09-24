@@ -3,29 +3,29 @@ let g:mapleader=" "
 
 set shell=sh
 
+" Install vim-plug on first run
+let s:plug = expand('~/.vim/autoload/plug.vim')
+if empty(glob(s:plug))
+  silent execute '!curl -fLo ' . s:plug . ' --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/vendor')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" icons
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 
-
-if !has('nvim') && !exists('g:gui_oni') | Plug 'tpope/vim-sensible' | endif
+if !has('nvim') | Plug 'tpope/vim-sensible' | endif
 
 Plug 'rstacruz/vim-opinion'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-
 Plug 'sheerun/vim-polyglot'
-" Plug 'w0rp/ale' old ale
-" Plug 'dense-analysis/ale'
 
 " This plugin automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file, or, in the case the current file is new, blank, or otherwise insufficient, by looking at other files of the same type in the current and parent directories. In lieu of adjusting 'softtabstop', 'smarttab' is enabled.
 Plug 'tpope/vim-sleuth'
@@ -36,17 +36,10 @@ Plug 'tpope/vim-fugitive'
 " Visuals
 Plug 'chrisbra/colorizer'
 
-" post install (yarn install | npm install) then load plugin only for editing supported files
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+" Formatting is handled by coc-prettier (see <leader>pp in key_bindings.vim)
 
-" Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " theme
-" Plug 'colepeters/spacemacs-theme.vim'
 Plug 'morhetz/gruvbox'
-" Plug 'git@gitlab.com:yorickpeterse/happy_hacking.vim.git'
-"
 
 Plug 'ryanoasis/vim-devicons'
 
